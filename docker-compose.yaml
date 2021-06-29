@@ -1,9 +1,10 @@
 version: '3.3'
 services:
    picframe:
-     image: satssehgal/pictureframe:latest
+     image: rcdemuth/pictureframe:latest
      ports:
       - "5000:5000"
      volumes:
-       - ./img:/app/static/images
+       - PATH_TO_IMAGES:/app/static/images
+       - PATH_TO_CONFIG:/app/config
      restart: always
