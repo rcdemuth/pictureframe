@@ -10,4 +10,4 @@ ADD . /app
 RUN pip3 install -r req.txt
 EXPOSE 5000
 ENTRYPOINT ["python3"]
-CMD ["/config/wsgi.py"]
+CMD ["config/wsgi.py"]
