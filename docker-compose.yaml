@@ -6,5 +6,5 @@ services:
       - "5000:5000"
      volumes:
        - /media/nas/evie_frame/pics:/app/static/images
-       - /docker/eframe:/app/config
+       - /docker/pictureframe:/app/config
      restart: always
