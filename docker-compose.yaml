@@ -5,6 +5,6 @@ services:
      ports:
       - "5000:5000"
      volumes:
-       - PATH_TO_IMAGES:/app/static/images
-       - PATH_TO_CONFIG:/app/config
+       - /media/nas/evie_frame/pics:/app/static/images
+       - /docker/eframe:/app/config
      restart: always
