@@ -1,10 +1,12 @@
 version: '3.3'
 services:
    picframe:
-     image: rcdemuth/pictureframe:latest
+     image: P8ntBal1551/pictureframe:latest
      ports:
       - "5000:5000"
      volumes:
-       - /media/nas/evie_frame/pics:/app/static/images
+       - *Your image directory*:/app/config/images
        - /docker/pictureframe:/app/config
      restart: always
+     environment:
+       - REFRESH_INTERVAL=30
